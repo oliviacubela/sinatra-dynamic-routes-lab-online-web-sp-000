@@ -20,7 +20,6 @@ class App < Sinatra::Base
     "#{@number}".times do
       puts "#{@phrase}"
     end
-
     #repeats the phrase n times
   end
 
