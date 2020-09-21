@@ -42,7 +42,7 @@ class App < Sinatra::Base
     when "add"  #adds two numbers together
       (@number1 + @number2).to_s
     when "subtracts"   #subtracts the second number from the first
-      (@number2 - @number1).to_s
+      (@number1 - @number2).to_s
     when "multiply"   #multiplies two numbers together
       (@number1 * @number2).to_s
     when "divide"   #divides the first number by the second number
