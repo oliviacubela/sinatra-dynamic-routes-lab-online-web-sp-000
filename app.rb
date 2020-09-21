@@ -18,7 +18,6 @@ class App < Sinatra::Base
     @number = params[:number].to_i
     @phrase = params[:phrase]
     "#{@number}".times {|"#{@phrase}"| puts "#{@phrase}"}
-    end
   end
     #repeats the phrase n times    100.times { |i| yield "#{i}\n" }
 
