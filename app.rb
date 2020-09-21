@@ -45,9 +45,9 @@ class App < Sinatra::Base
   when "subtracts"
     @number2 - @number1
   end
-    
+
   #   #adds two numbers together
-  
+
     #subtracts the second number from the first
     #multiplies two numbers together
     #divides the first number by the second number
