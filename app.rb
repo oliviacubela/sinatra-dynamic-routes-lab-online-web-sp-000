@@ -22,13 +22,14 @@ class App < Sinatra::Base
     #repeats the phrase n times
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
-    @word1 = params[:word1]
-    @word2 = params[:word2]
-    @word3 = params[:word3]
-    @word4 = params[:word4]
-    @word5 = params[:word5]
-    string = ("#{@word1}" + " " + "#{@word2}" + " " + "#{@word3}" + " " + "#{@word4}" + " " + "#{@word5}" + ".")
-    string.join(" ")#concatenates the words and adds a period
+    # @word1 = params[:word1]
+    # @word2 = params[:word2]
+    # @word3 = params[:word3]
+    # @word4 = params[:word4]
+    # @word5 = params[:word5]
+    # string = ("#{@word1}" + " " + "#{@word2}" + " " + "#{@word3}" + " " + "#{@word4}" + " " + "#{@word5}" + ".")
+    string = params[:word1]params[:word2]params[:word3]params[:word4]params[:word5]
+    # string.join(" ")#concatenates the words and adds a period
   end
 
   get '/:operation/:number1/:number2' do
