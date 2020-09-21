@@ -17,8 +17,7 @@ class App < Sinatra::Base
   get '/say/:number/:phrase' do
     @number = params[:number].to_i
     @phrase = params[:phrase]
-    def each
-      "#{@number}".times {|"#{@phrase}"| yield "#{@phrase}\n"}
+    "#{@number}".times {|"#{@phrase}"| puts "#{@phrase}\n"}
     end
   end
     #repeats the phrase n times    100.times { |i| yield "#{i}\n" }
