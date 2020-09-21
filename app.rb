@@ -22,6 +22,7 @@ class App < Sinatra::Base
     #repeats the phrase n times
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
+    #concatenates the words and adds a period
     @word1 = params[:word1]
     @word2 = params[:word2]
     @word3 = params[:word3]
@@ -29,10 +30,13 @@ class App < Sinatra::Base
     @word5 = params[:word5]
     @word1 + " " + @word2 + " " + @word3 + " " + @word4 + " " + @word5 + "."
 
-    # string.join(" ")keeps giving error #concatenates the words and adds a period
+    # string.join(" ")keeps giving error
   end
 
   get '/:operation/:number1/:number2' do
+    @operation = params[:operation]
+    @number1 = params[:number1].to_i
+    @number2 = params[:number2].to_i
     #adds two numbers together
     #subtracts the second number from the first
     #multiplies two numbers together
