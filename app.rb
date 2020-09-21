@@ -41,7 +41,7 @@ class App < Sinatra::Base
     case @operation
     when "add"  #adds two numbers together
       (@number1 + @number2).to_s
-    when "subtracts"   #subtracts the second number from the first
+    when "subtract"   #subtracts the second number from the first
       (@number1 - @number2).to_s
     when "multiply"   #multiplies two numbers together
       (@number1 * @number2).to_s
