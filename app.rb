@@ -46,7 +46,7 @@ class App < Sinatra::Base
     when "multiply"   #multiplies two numbers together
       (@number1 * @number2).to_s
     when "divide"   #divides the first number by the second number
-      (@number1 * @number2).to_s
+      (@number1 / @number2).to_s
     end
   end
 
