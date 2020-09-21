@@ -18,14 +18,10 @@ class App < Sinatra::Base
     @number = params[:number].to_i
     @phrase = params[:phrase]
     def each
-    "#{@number}".times {|"#{@phrase}"| yield "#{@phrase}\n"}
+      "#{@number}".times {|"#{@phrase}"| yield "#{@phrase}\n"}
     end
+  end
     #repeats the phrase n times    100.times { |i| yield "#{i}\n" }
-  end
-end
-#
-# get('/') { Stream.new }
-  end
 
   get '/say/:word1/:word2/:word3/:word4/:word5' do
     #concatenates the words and adds a period
